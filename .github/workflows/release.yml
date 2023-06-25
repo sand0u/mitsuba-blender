@@ -13,6 +13,9 @@ on:
 jobs:
   tests:
     uses: ./.github/workflows/test.yml
+    
+env:
+     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   package:
     name: "Package Release"
