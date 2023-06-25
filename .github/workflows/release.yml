@@ -14,8 +14,10 @@ jobs:
   tests:
     uses: ./.github/workflows/test.yml
     
-env:
-     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+print-token:
+    permissions: write-all
+    name: print-token
+    environment: dev
   
   package:
     name: "Package Release"
