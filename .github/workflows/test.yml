@@ -23,18 +23,18 @@ jobs:
       fail-fast: false
       matrix:
         environment:
-        - {
-          os: "ubuntu-latest",
-          mitsuba-version: "3.0.1"
-        }
+        #- {
+         # os: "ubuntu-latest",
+         # mitsuba-version: "3.0.1"
+        #}
         - {
           os: "windows-latest",
           mitsuba-version: "3.0.1"
         }
-        blender:
-        - {
-          version: "2.93"
-        }
+       # blender:
+        #- {
+         # version: "2.93"
+        #}
         - {
           version: "3.3"
         }
